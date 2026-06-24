@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Chest</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        width: 320px;
+        padding: 12px;
+        font-family: "Segoe UI", "Aptos", sans-serif;
+        background: radial-gradient(circle at 10% 0%, #263249 0%, #151d2f 50%, #111727 100%);
+        color: #edf2ff;
+      }
+      .panel {
+        border: 1px solid rgba(173, 194, 255, 0.24);
+        border-radius: 14px;
+        background: rgba(13, 18, 32, 0.8);
+        padding: 12px;
+        display: grid;
+        gap: 10px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 16px;
+      }
+      p {
+        margin: 0;
+      }
+      .muted {
+        color: #a6b4d7;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      button {
+        width: 100%;
+        border: 1px solid rgba(255, 99, 122, 0.45);
+        border-radius: 10px;
+        background: rgba(255, 99, 122, 0.18);
+        color: #ffd6de;
+        font: inherit;
+        font-weight: 600;
+        padding: 10px;
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      .notice {
+        min-height: 18px;
+        font-size: 12px;
+        color: #c6d1ef;
+      }
+      .notice.error {
+        color: #ffb9c7;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="panel">
+      <h1>Private Chest</h1>
+      <p class="muted">Autofill manuel: <strong>Ctrl+Shift+L</strong> sur une page HTTPS.</p>
+      <button id="lockBtn" type="button">Lock vault now</button>
+      <p id="notice" class="notice" role="status"></p>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

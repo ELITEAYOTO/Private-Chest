@@ -1,0 +1,9 @@
+{
+  "name": "io.privatechest.native",
+  "description": "Private Chest native messaging host",
+  "path": "__PRIVATE_CHEST_NATIVE_HOST_PATH__",
+  "type": "stdio",
+  "allowed_extensions": [
+    "__FIREFOX_EXTENSION_ID__"
+  ]
+}
