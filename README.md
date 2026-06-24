@@ -3,6 +3,7 @@
 Private Chest est un gestionnaire de mots de passe local-first, open source, conçu pour stocker des identifiants, notes confidentielles, cartes bancaires et documents sensibles dans un coffre chiffré sur l'ordinateur de l'utilisateur.
 
 L'objectif du projet est de proposer une application simple à utiliser, transparente dans son fonctionnement, et pensée avec une approche cybersécurité : chiffrement robuste, stockage local, verrouillage automatique et absence de dépendance obligatoire au cloud.
+<img width="1920" height="1041" alt="image" src="https://github.com/user-attachments/assets/c152397e-7156-4a01-b312-a74a8c3e4b12" />
 
 > Statut : projet personnel / portfolio en version expérimentale. Private Chest utilise des primitives cryptographiques modernes, mais n'a pas encore fait l'objet d'un audit de sécurité externe.
 
@@ -18,6 +19,7 @@ L'objectif du projet est de proposer une application simple à utiliser, transpa
 - 📎 Documents chiffrés : ajout de fichiers sensibles chiffrés, avec limite de taille côté backend.
 - 🗑️ Corbeille : suppression réversible avant suppression définitive.
 - 🧩 Architecture modulaire : logique séparée en crates Rust pour la crypto, le stockage, la session et le backend.
+<img width="1920" height="1041" alt="image" src="https://github.com/user-attachments/assets/4fbf229d-eccb-41b6-802d-ec9b3cff4e0e" />
 
 ## Sécurité & Architecture
 
