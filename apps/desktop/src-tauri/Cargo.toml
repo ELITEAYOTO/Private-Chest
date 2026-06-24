@@ -1,0 +1,24 @@
+[package]
+name = "private_chest_desktop"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+base64 = "0.22"
+desktop_backend = { path = "../../../crates/desktop_backend" }
+password_generator = { path = "../../../crates/password_generator" }
+secret_types = { path = "../../../crates/secret_types" }
+vault_domain = { path = "../../../crates/vault_domain" }
+vault_store = { path = "../../../crates/vault_store" }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[workspace]

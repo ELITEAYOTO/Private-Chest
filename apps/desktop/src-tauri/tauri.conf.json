@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Private Chest",
+  "version": "0.1.0",
+  "identifier": "io.privatechest.desktop",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Private Chest",
+        "url": "index.html",
+        "width": 1220,
+        "height": 860,
+        "resizable": true,
+        "visible": true,
+        "theme": "Dark",
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'none'; img-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon-privatechest.ico",
+      "icons/icon.png"
+    ]
+  }
+}
