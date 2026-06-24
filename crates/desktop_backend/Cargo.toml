@@ -1,0 +1,22 @@
+﻿[package]
+name = "desktop_backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arboard = "3.6"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+crypto_core = { path = "../crypto_core" }
+native_protocol = { path = "../native_protocol" }
+password_generator = { path = "../password_generator" }
+rand = "0.8"
+secret_types = { path = "../secret_types" }
+serde = { version = "1.0", features = ["derive"] }
+session_manager = { path = "../session_manager" }
+thiserror = "1.0"
+uuid = { version = "1.10", features = ["v4"] }
+vault_domain = { path = "../vault_domain" }
+vault_store = { path = "../vault_store" }
+
+[dev-dependencies]
+tempfile = "3.10"

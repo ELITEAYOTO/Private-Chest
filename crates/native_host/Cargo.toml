@@ -1,0 +1,12 @@
+﻿[package]
+name = "native_host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+desktop_backend = { path = "../desktop_backend" }
+native_protocol = { path = "../native_protocol" }
+secret_types = { path = "../secret_types" }
+serde_json = "1.0"
+thiserror = "1.0"
+vault_store = { path = "../vault_store" }
